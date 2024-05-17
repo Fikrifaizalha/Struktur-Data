@@ -26,3 +26,30 @@ let age = 28;
 
 console.log(firstName);
 console.log(age);
+
+// Default Values //
+
+const profile = {
+  nama: "irene",
+  teman: "joy",
+  umur: 27,
+};
+const { nama, teman, myTeam = "bangsat" } = profile;
+
+console.log(nama);
+console.log(teman);
+console.log(myTeam);
+
+// Assigning to Different Local Variable Names //
+
+const klub = {
+  merah: "united",
+  biru: "city",
+  hijau: "liverpool",
+};
+
+const { merah: localmerah, biru: localbiru, hijau: localhijau } = klub;
+
+console.log(localmerah);
+console.log(localbiru);
+console.log(localhijau);
